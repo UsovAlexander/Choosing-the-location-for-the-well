@@ -1,12 +1,14 @@
 # Choosing-the-location-for-the-well
 
-Допустим, вы работаете в добывающей компании «ГлавРосГосНефть». Нужно решить, где бурить новую скважину.
+We need to decide where to drill a new well. We were provided with oil samples in three regions: in each 10,000 fields, where the quality of oil and the volume of its reserves were measured. Let's build a machine learning model that will help determine the region where mining will bring the greatest profit. Let's analyze the possible profits and risks with the Bootstrap technique.
 
-Нам предоставлены пробы нефти в трёх регионах: в каждом 10 000 месторождений, где измерили качество нефти и объём её запасов. Построим модель машинного обучения, которая поможет определить регион, где добыча принесёт наибольшую прибыль. Проанализируем возможную прибыль и риски техникой *Bootstrap.*
+Steps to select a location:
 
-Шаги для выбора локации:
+We are looking for deposits in the selected region, we determine the values of the features for each;
+We build a model and estimate the volume of stocks;
+We choose the deposit with the highest estimates of values. The number of deposits depends on the company's budget and the cost of developing one well;
+The profit is equal to the total profit of the selected fields.
 
-- В избранном регионе ищем месторождения, для каждого определяем значения признаков;
-- Строим модель и оцениваем объём запасов;
-- Выбираем месторождения с самым высокими оценками значений. Количество месторождений зависит от бюджета компании и стоимости разработки одной скважины;
-- Прибыль равна суммарной прибыли отобранных месторождений.
+id — the unique identifier of the well;  
+f0, f1, f2 — three signs of points (no matter what they mean, but the signs themselves are significant);
+product — the volume of reserves in the well (thousand barrels).
