@@ -10,5 +10,5 @@ We choose the deposit with the highest estimates of values. The number of deposi
 The profit is equal to the total profit of the selected fields.
 
 id — the unique identifier of the well;  
-f0, f1, f2 — three signs of points (no matter what they mean, but the signs themselves are significant);
+f0, f1, f2 — three signs of points (no matter what they mean, but the signs themselves are significant);  
 product — the volume of reserves in the well (thousand barrels).
